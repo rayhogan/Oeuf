@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/oeuf/static/css/main.21d0b8b0.chunk.css",
+    "main.js": "/oeuf/static/js/main.03beb5ae.chunk.js",
+    "main.js.map": "/oeuf/static/js/main.03beb5ae.chunk.js.map",
+    "runtime-main.js": "/oeuf/static/js/runtime-main.ef1e3f1a.js",
+    "runtime-main.js.map": "/oeuf/static/js/runtime-main.ef1e3f1a.js.map",
+    "static/js/2.b8fd3db8.chunk.js": "/oeuf/static/js/2.b8fd3db8.chunk.js",
+    "static/js/2.b8fd3db8.chunk.js.map": "/oeuf/static/js/2.b8fd3db8.chunk.js.map",
+    "index.html": "/oeuf/index.html",
+    "precache-manifest.8a92fd3f860d205bad0032d7d9b8a78b.js": "/oeuf/precache-manifest.8a92fd3f860d205bad0032d7d9b8a78b.js",
+    "service-worker.js": "/oeuf/service-worker.js",
+    "static/css/main.21d0b8b0.chunk.css.map": "/oeuf/static/css/main.21d0b8b0.chunk.css.map",
+    "static/js/2.b8fd3db8.chunk.js.LICENSE.txt": "/oeuf/static/js/2.b8fd3db8.chunk.js.LICENSE.txt",
+    "static/media/egg.svg": "/oeuf/static/media/egg.80659242.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef1e3f1a.js",
+    "static/js/2.b8fd3db8.chunk.js",
+    "static/css/main.21d0b8b0.chunk.css",
+    "static/js/main.03beb5ae.chunk.js"
+  ]
+}
