@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/oeuf/static/css/main.21d0b8b0.chunk.css",
-    "main.js": "/oeuf/static/js/main.0f65ca23.chunk.js",
-    "main.js.map": "/oeuf/static/js/main.0f65ca23.chunk.js.map",
+    "main.css": "/oeuf/static/css/main.dcf5cf6e.chunk.css",
+    "main.js": "/oeuf/static/js/main.df355315.chunk.js",
+    "main.js.map": "/oeuf/static/js/main.df355315.chunk.js.map",
     "runtime-main.js": "/oeuf/static/js/runtime-main.ef1e3f1a.js",
     "runtime-main.js.map": "/oeuf/static/js/runtime-main.ef1e3f1a.js.map",
     "static/js/2.baec3995.chunk.js": "/oeuf/static/js/2.baec3995.chunk.js",
     "static/js/2.baec3995.chunk.js.map": "/oeuf/static/js/2.baec3995.chunk.js.map",
     "index.html": "/oeuf/index.html",
-    "precache-manifest.363fc5570e1b91482bf415938d3991c9.js": "/oeuf/precache-manifest.363fc5570e1b91482bf415938d3991c9.js",
+    "precache-manifest.4b910c8556c13a13251f9940026a7bcb.js": "/oeuf/precache-manifest.4b910c8556c13a13251f9940026a7bcb.js",
     "service-worker.js": "/oeuf/service-worker.js",
-    "static/css/main.21d0b8b0.chunk.css.map": "/oeuf/static/css/main.21d0b8b0.chunk.css.map",
+    "static/css/main.dcf5cf6e.chunk.css.map": "/oeuf/static/css/main.dcf5cf6e.chunk.css.map",
     "static/js/2.baec3995.chunk.js.LICENSE.txt": "/oeuf/static/js/2.baec3995.chunk.js.LICENSE.txt",
     "static/media/egg.svg": "/oeuf/static/media/egg.80659242.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ef1e3f1a.js",
     "static/js/2.baec3995.chunk.js",
-    "static/css/main.21d0b8b0.chunk.css",
-    "static/js/main.0f65ca23.chunk.js"
+    "static/css/main.dcf5cf6e.chunk.css",
+    "static/js/main.df355315.chunk.js"
   ]
 }
