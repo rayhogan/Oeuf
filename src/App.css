@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+
+.Egg-Control
+{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #7e8592;
+  border-radius: 10px;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 0px 10px 10px 10px;
+
+}
+
+.Egg-Property
+{
+  padding: 10px;
+}
+
+.Egg-Property p
+{
+  font-weight: 700;
+}

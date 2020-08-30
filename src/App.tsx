@@ -10,9 +10,12 @@ class App extends React.Component<any, any> {
     super(Props);
 
     this.state = {
-      timer: 220,
+      timer: 186,
       running: false,
-      intervalTimer: null
+      intervalTimer: null,
+      eggSize: 186,
+      eggTemp: 0,
+      eggConsistency: 0
     }
 
     this.startTimer = this.startTimer.bind(this);
@@ -52,10 +55,31 @@ class App extends React.Component<any, any> {
       <div className="App">
         <header className="App-header">
           <div className="App-Title">Oeuf</div>
+          <div className="Egg-Control">
+            <div className="Egg-Property">
+              <p>Size</p>
+              <input type="radio" value="Small" name="eggsize" /> Small<br />
+              <input type="radio" value="Medium" name="eggsize" /> Medium<br />
+              <input type="radio" value="Large" name="gender" /> Large<br />
+            </div>
+
+            <div className="Egg-Property">
+              <p>Temperature</p>
+              <input type="radio" value="Room" name="eggtemp" /> Room<br />
+              <input type="radio" value="Fridge" name="eggtemp" /> Fridge<br />
+            </div>
+
+            <div className="Egg-Property">
+              <p>Consistency</p>
+              <input type="radio" value="Soft" name="eggresult" /> Soft<br />
+              <input type="radio" value="Medium" name="eggresult" /> Medium<br />
+              <input type="radio" value="Hard" name="eggresult" /> Hard<br />
+            </div>
+          </div>
           <img src={egg} height="100" onClick={this.startTimer} />
           <p>{Math.floor(this.state.timer / 60)} mins {this.state.timer % 60} secs</p>
         </header>
-      </div>
+      </div >
     );
   }
 }
