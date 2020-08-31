@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "88098da5aa2a12cf16af38866acd6487",
+    "revision": "8e5ded7e4ad75444a33806ba35750299",
     "url": "/oeuf/index.html"
   },
   {
-    "revision": "6831679db2ac236f07c7",
-    "url": "/oeuf/static/css/main.dcf5cf6e.chunk.css"
+    "revision": "dc78798086ee12b59e0f",
+    "url": "/oeuf/static/css/main.80d1d9ca.chunk.css"
   },
   {
     "revision": "dd7b60b02101261402ec",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/oeuf/static/js/2.baec3995.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6831679db2ac236f07c7",
-    "url": "/oeuf/static/js/main.df355315.chunk.js"
+    "revision": "dc78798086ee12b59e0f",
+    "url": "/oeuf/static/js/main.c1dda0e1.chunk.js"
   },
   {
     "revision": "41056804f780600ca177",
