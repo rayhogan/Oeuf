@@ -84,15 +84,15 @@ class App extends React.Component<any, any> {
 
   updateCookingTime(e: any) {
     this.setState((state: any) => {
-      return {timer: Math.floor(((state.eggSize * 0.155) * .75) * Math.log(0.76 * (state.eggTemp - 100) / (state.eggConsistency - 100)) * 60) }
+      return { timer: Math.floor(((state.eggSize * 0.155) * .75) * Math.log(0.76 * (state.eggTemp - 100) / (state.eggConsistency - 100)) * 60) }
     })
 
     console.log(this.state.timer);
-    
+
     console.log(this.state.eggSize);
     console.log(this.state.eggTemp);
     console.log(this.state.eggConsistency);
-    console.log(Math.floor(this.state.timer / 60) +"mins+ " +this.state.timer % 60+" secs");
+    console.log(Math.floor(this.state.timer / 60) + "mins+ " + this.state.timer % 60 + " secs");
   }
 
 
@@ -100,30 +100,37 @@ class App extends React.Component<any, any> {
     return (
       <div className="App">
         <header className="App-header">
-          <div className="App-Title">Oeuf</div>
+          <div className="App-Title">
+            <div><img src={egg} height="20" onClick={this.startTimer} /></div>
+            <div>euf</div>
+          </div>
           <div className="Egg-Control">
             <div className="Egg-Property" onChange={this.onSizeValue}>
               <p>Size</p>
               <input type="radio" value="47" name="eggsize" /> Small<br />
-              <input type="radio" value="57" name="eggsize" defaultChecked/> Medium<br />
+              <input type="radio" value="57" name="eggsize" defaultChecked /> Medium<br />
               <input type="radio" value="67" name="eggsize" /> Large<br />
             </div>
 
             <div className="Egg-Property" onChange={this.onTemperatureValue}>
               <p>Temperature</p>
-              <input type="radio" value="21" name="eggtemp" defaultChecked/> Room<br />
+              <input type="radio" value="21" name="eggtemp" defaultChecked /> Room<br />
               <input type="radio" value="4" name="eggtemp" /> Fridge<br />
             </div>
 
             <div className="Egg-Property" onChange={this.onConsistencyValue}>
               <p>Consistency</p>
-              <input type="radio" value="67" name="eggresult" defaultChecked/> Soft<br />
+              <input type="radio" value="67" name="eggresult" defaultChecked /> Soft<br />
               <input type="radio" value="70" name="eggresult" /> Medium<br />
               <input type="radio" value="75" name="eggresult" /> Hard<br />
             </div>
           </div>
-          <img src={egg} height="100" onClick={this.startTimer} />
-          <p>{Math.floor(this.state.timer / 60)} mins {this.state.timer % 60} secs</p>
+          <div>Cooking Time</div>
+          <div>{Math.floor(this.state.timer / 60)} mins {this.state.timer % 60} secs</div>
+          <div className="App-Buttons">
+            <div><button className="myButton Stop" type="button" onClick={this.startTimer} disabled={!this.state.running}>Reset</button></div>
+            <div><button className="myButton Go" type="button" onClick={this.startTimer} disabled={this.state.running}>Start</button></div>
+          </div>
         </header>
       </div >
     );
