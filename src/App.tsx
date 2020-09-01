@@ -1,7 +1,6 @@
 import React from 'react';
 import egg from './images/egg.svg'
 import './App.css';
-import { throws } from 'assert';
 
 class App extends React.Component<any, any> {
 
