@@ -100,6 +100,7 @@ class App extends React.Component<any, any> {
 
 
   render() {
+    var settingClassName = "Egg-Control " + (this.state.running ? "disableSettings" : null);
     return (
       <div className="App">
         <header className="App-header">
@@ -107,7 +108,7 @@ class App extends React.Component<any, any> {
             <div><img src={egg} height="20" onClick={this.startTimer} /></div>
             <div>euf</div>
           </div>
-          <div className="Egg-Control">
+          <div className={settingClassName}>
             <div className="Egg-Property" onChange={this.onSizeValue}>
               <p>Size</p>
               <input type="radio" value="47" name="eggsize" /> Small<br />

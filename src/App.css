@@ -131,3 +131,8 @@
   color: #9a9a9e;
   border:1px solid #777777;
 }
+
+.disableSettings {
+  pointer-events: none;
+  opacity: 0.4;
+}
