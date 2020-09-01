@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import egg from './images/egg.svg'
 import './App.css';
 import { throws } from 'assert';
@@ -27,7 +26,7 @@ class App extends React.Component<any, any> {
 
     this.updateCookingTime = this.updateCookingTime.bind(this);
 
-    // Formula: ((57*0.155)*.75)*Math.log(0.76 * (21 - 100)/(63 - 100))*60
+    this.resetSettings = this.resetSettings.bind(this);
   }
 
   startTimer(e: any) {
@@ -87,12 +86,17 @@ class App extends React.Component<any, any> {
       return { timer: Math.floor(((state.eggSize * 0.155) * .75) * Math.log(0.76 * (state.eggTemp - 100) / (state.eggConsistency - 100)) * 60) }
     })
 
-    console.log(this.state.timer);
+  }
 
-    console.log(this.state.eggSize);
-    console.log(this.state.eggTemp);
-    console.log(this.state.eggConsistency);
-    console.log(Math.floor(this.state.timer / 60) + "mins+ " + this.state.timer % 60 + " secs");
+  resetSettings(e: any)
+  {
+    clearInterval(this.state.intervalTimer);
+    this.updateCookingTime(this);
+
+    this.setState({
+      running: false
+    })
+
   }
 
 
@@ -128,7 +132,7 @@ class App extends React.Component<any, any> {
           <div>Cooking Time</div>
           <div>{Math.floor(this.state.timer / 60)} mins {this.state.timer % 60} secs</div>
           <div className="App-Buttons">
-            <div><button className="myButton Stop" type="button" onClick={this.startTimer} disabled={!this.state.running}>Reset</button></div>
+            <div><button className="myButton Stop" type="button" onClick={this.resetSettings} disabled={!this.state.running}>Reset</button></div>
             <div><button className="myButton Go" type="button" onClick={this.startTimer} disabled={this.state.running}>Start</button></div>
           </div>
         </header>
