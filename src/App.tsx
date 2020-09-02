@@ -1,5 +1,8 @@
 import React from 'react';
 import egg from './images/egg.svg'
+import twitter from './images/twitter.svg'
+import github from './images/github.svg'
+import linkedin from './images/linkedin.svg'
 import './App.css';
 
 class App extends React.Component<any, any> {
@@ -87,8 +90,7 @@ class App extends React.Component<any, any> {
 
   }
 
-  resetSettings(e: any)
-  {
+  resetSettings(e: any) {
     clearInterval(this.state.intervalTimer);
     this.updateCookingTime(this);
 
@@ -134,6 +136,23 @@ class App extends React.Component<any, any> {
           <div className="App-Buttons">
             <div><button className="myButton Stop" type="button" onClick={this.resetSettings} disabled={!this.state.running}>Reset</button></div>
             <div><button className="myButton Go" type="button" onClick={this.startTimer} disabled={this.state.running}>Start</button></div>
+          </div>
+          <div className="Social-Buttons">
+            <div>
+              <a href="https://www.github.com/rayhogan">
+                <img src={github}/>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/ray-hogan/">
+              <img src={linkedin}/>
+              </a>
+            </div>
+            <div>
+              <a href="https://twitter.com/rayhogan">
+              <img src={twitter}/>
+              </a>
+            </div>
           </div>
         </header>
       </div >
