@@ -16,3 +16,5 @@ Surprising bit of math behind boiling an egg. The following resources were consu
 * https://newton.ex.ac.uk/teaching/CDHW/egg/
 * https://onlinelibrary.wiley.com/doi/full/10.1002/fsn3.257
 * http://copernic.udg.edu/QuimFort/EJP_00.pdf
+
+Social icons from https://www.flaticon.com/categories/social-media
